@@ -8,7 +8,7 @@ export default defineConfig({
   srcDir: 'src',
   base: '/zonky.blog/',
   cleanUrls: true,
-  head: [['link', { rel: 'icon', href: './zonky.blog/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/zonky.blog/favicon.ico' }]],
   lang: 'zh-CN',
   locales: {
     root: {
@@ -22,7 +22,7 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: './logo.png',
+    logo: '/logo.png',
     // siteTitle: 'Hello World',
     i18nRouting: false,
     nav: [
