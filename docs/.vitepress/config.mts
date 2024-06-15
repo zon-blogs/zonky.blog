@@ -5,26 +5,20 @@ export default defineConfig({
   title: "Zonky.Blog",
   titleTemplate: '黎明之光',
   description: "Zonky的个人博客 -- 黎明之光",
-  srcDir: 'src',
   base: '/zonky.blog/',
   cleanUrls: true,
   head: [['link', { rel: 'icon', href: '/zonky.blog/favicon.ico' }]],
-  lang: 'zh-CN',
   locales: {
     root: {
       label: '简体中文',
-      lang: 'zh'
+      lang: 'zh',
     },
-    // en: {
-    //   label: 'English',
-    //   lang: 'en'
-    // }
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/logo.png',
     // siteTitle: 'Hello World',
-    i18nRouting: false,
+    // i18nRouting: false,
     nav: [
       { text: '首页', link: '/' },
       { text: '文章', link: '/introduction' }
@@ -64,11 +58,16 @@ export default defineConfig({
       }
     },
 
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+
     search: {
       provider: 'local',
       options: {
         locales: {
-          zh: {
+          root: {
             translations: {
               button: {
                 buttonText: '搜索文档',
@@ -79,7 +78,8 @@ export default defineConfig({
                 resetButtonTitle: '清除查询条件',
                 footer: {
                   selectText: '选择',
-                  navigateText: '切换'
+                  navigateText: '切换',
+                  closeText: '关闭'
                 }
               }
             }
