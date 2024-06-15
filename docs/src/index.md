@@ -7,7 +7,7 @@ hero:
   text: "Zonky -- 黎明之光"
   tagline: 希望是黑暗之中的光芒，如同黎明之光。
   image:
-    src: /biglogo.png
+    src: ./biglogo.png
     alt: 黎明之光
   actions:
     - theme: brand
